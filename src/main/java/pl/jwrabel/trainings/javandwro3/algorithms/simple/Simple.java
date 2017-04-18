@@ -83,11 +83,22 @@ public class Simple {
         }
 
         // Sposób 2 - zamiana miejscami elementów 1 tablicy
-        System.out.println("--- SPOSÓB 2 ---");
 
         // przykład - ZAMIANA array[0] z array[2]
         int tmp = array[0];
         array[0] = array[2];
         array[2] = tmp;
+
+        int[] array2 = {10, 7, 3, 4,1};
+        System.out.println("--- SPOSÓB 2 ---");
+        int maxIndex2 = array2.length-1;
+        for (int i = 0; i < array2.length/2; i++) {
+            // zamienić miejscami
+//            arrayToReverse2[i] z arrayToReverse2[4-i]
+            int tmpVar = array2[i];
+            array2[i] = array2[maxIndex2-i];
+            array2[maxIndex2-i] = tmpVar;
+        }
+
     }
 }
