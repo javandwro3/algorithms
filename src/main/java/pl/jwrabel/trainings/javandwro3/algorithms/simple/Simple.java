@@ -30,14 +30,36 @@ public class Simple {
         int temp = 0;
         for (int i = 0; i < myArray.length; i++) {
             temp += 2;
-//            temp = temp + 2;
+//          temp = temp + 2;
 
             myArray[i] = temp;
         }
 
         // === ZADANIE ===
         // Stworzyć tablicę z wymyślonymi liczbami, znaleźć MIN i MAX
+        // * w jednej pętli
+        int[] myArray1 = new int[3];
+        myArray1[0] = 5;
+        myArray1[1] = 10;
+        myArray1[2] = 7;
 
+        int[] array = new int[]{2, 5, 6, 1, 4, 2};
+        int[] myArray3 = {2, 5, 6, 1, 4, 2};
+
+
+        int min = array[0];
+        int max = array[0];
+        for (int i = 1; i < array.length; i++) {
+            if (array[i] < min) {
+                min = array[i];
+            }
+            if (array[i] > max) {
+                max = array[i];
+            }
+        }
+
+        // === ZADANIE === Stworzyć tablicę i wypełnić
+        // odwrócić tablicę
 
     }
 }

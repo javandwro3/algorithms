@@ -1,0 +1,23 @@
+	// WAŻNE !!! Znajdują tu się zadania o różnych stopniu skomplikowania, jeśli dany problem jest dla Ciebie za trudny
+	//  --- pytaj mnie lub przejdź do następnego
+
+
+	// PROSTE ALGORYTMY
+	// === ZADANIE === Wypełnienie tablicy liczbami od 1 do N
+	// === ZADANIE === Wypełnienie tablicy liczbami od N do 1
+	// === ZADANIE === Wyszukiwanie najmniejszej wartości w tablicy
+	// === ZADANIE === Wyszukiwanie najmniejszej i największej wartości w tablicy przy użyciu jednej pętli
+	// === ZADANIE === Zamiana miejscami dwóch elementów tablicy
+	// === ZADANIE === Wykreślenie (zamiana na np. -1) w tablicy wartości nieparzystych
+	// === ZADANIE === Suma liczba w tablicy
+	// === ZADANIE === Przepisanie tablicy mniejszej do większej (np tablicę [1,2,3] chcemy przepisać
+	//      do nowej tablicy 6-elementowej, wynikeim będzie [1,2,3,0,0,0])
+	// === ZADANIE === Odwrócenie tablicy (1,2,3) -> (3,2,1)
+	// === ZADANIE === Choinka o zadanej wysokości
+	// === ZADANIE === "Narysuj" dużą literę A z liter A, np.
+	//    A
+	//   A A
+	//  A   A
+	// A A A A
+	//A       A
+	// === ZADANIE === Mnożenie macierzy
