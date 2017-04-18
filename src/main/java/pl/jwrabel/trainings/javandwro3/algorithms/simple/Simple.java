@@ -60,6 +60,15 @@ public class Simple {
 
         // === ZADANIE === Stworzyć tablicę i wypełnić
         // odwrócić tablicę
+        int[] arrayToReverse = new int[]{5, 3, 1};
+        int[] reversedArray = new int[arrayToReverse.length];
+
+        // Rozwiązanie 1
+        int maxIndex = arrayToReverse.length - 1;
+        for (int i = 0; i < reversedArray.length; i++) {
+            reversedArray[i] = arrayToReverse[maxIndex - i];
+        }
+
 
     }
 }
