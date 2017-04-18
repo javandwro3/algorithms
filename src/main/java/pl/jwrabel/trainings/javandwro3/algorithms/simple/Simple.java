@@ -62,12 +62,26 @@ public class Simple {
         // odwrócić tablicę
         int[] arrayToReverse = new int[]{5, 3, 1};
         int[] reversedArray = new int[arrayToReverse.length];
+        
+        
+        // wypisanie tablicy
+        System.out.println("TABLICA DO ODWRÓCENIA");
+        for (int i = 0; i < arrayToReverse.length; i++) {
+            System.out.println(arrayToReverse[i]);
+        }
 
         // Rozwiązanie 1
         int maxIndex = arrayToReverse.length - 1;
         for (int i = 0; i < reversedArray.length; i++) {
             reversedArray[i] = arrayToReverse[maxIndex - i];
         }
+
+        System.out.println("TABLICA ODWRÓCONA");
+        for (int i = 0; i < reversedArray.length; i++) {
+            System.out.println(reversedArray[i]);
+        }
+
+        
 
 
     }
