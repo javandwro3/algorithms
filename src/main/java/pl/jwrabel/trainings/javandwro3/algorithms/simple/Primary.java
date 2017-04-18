@@ -1,5 +1,7 @@
 package pl.jwrabel.trainings.javandwro3.algorithms.simple;
 
+import java.util.List;
+
 /**
  * Created by jakubwrabel on 18.04.2017.
  */
@@ -17,5 +19,9 @@ public class Primary {
             }
         }
         return true;
+    }
+
+    public static List<Integer> findPrimaryLessThan(int x) {
+        return null;
     }
 }
