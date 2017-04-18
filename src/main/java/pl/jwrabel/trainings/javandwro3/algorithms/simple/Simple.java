@@ -62,9 +62,10 @@ public class Simple {
         // odwrócić tablicę
         int[] arrayToReverse = new int[]{5, 3, 1};
         int[] reversedArray = new int[arrayToReverse.length];
-        
-        
+
+        // Sposób 1 - nowa tablica
         // wypisanie tablicy
+        System.out.println("--- SPOSÓB 1 ---");
         System.out.println("TABLICA DO ODWRÓCENIA");
         for (int i = 0; i < arrayToReverse.length; i++) {
             System.out.println(arrayToReverse[i]);
@@ -81,8 +82,12 @@ public class Simple {
             System.out.println(reversedArray[i]);
         }
 
-        
+        // Sposób 2 - zamiana miejscami elementów 1 tablicy
+        System.out.println("--- SPOSÓB 2 ---");
 
-
+        // przykład - ZAMIANA array[0] z array[2]
+        int tmp = array[0];
+        array[0] = array[2];
+        array[2] = tmp;
     }
 }
