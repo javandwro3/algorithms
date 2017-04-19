@@ -29,7 +29,7 @@ public class MultArrays {
             System.out.println();
         }
 
-        // Wypisywanie - wewnętrzna tablica jako wiersz
+        // Wypisywanie - wewnętrzna tablica jako kolumna
         printArray(arrayMult);
 
 
