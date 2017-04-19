@@ -87,11 +87,23 @@ public class MultArrays {
         // Wypisujemy tablicę
         System.out.println("------  TWORZENIE MACIERZY PODANEJ PRZEZ UŻYTKOWNIKA -----");
         System.out.println("Podaj X: ");
-        int x = new Scanner(System.in).nextInt();
+        int sizeX = new Scanner(System.in).nextInt();
         System.out.println("Podaj Y: ");
-        int y = new Scanner(System.in).nextInt();
+        int sizeY = new Scanner(System.in).nextInt();
 
-        System.out.println("Tworzę tablicę o wymiarach x: " + x + " y: " + y);
+        System.out.println("Tworzę tablicę o wymiarach x: " + sizeX + " y: " + sizeY);
+        int[][] newArray = new int[sizeX][sizeY];
+
+        for (int y = 0; y < newArray[0].length; y++) {
+            for (int x = 0; x < newArray.length; x++) {
+                System.out.println("Podaj wartosc dla x: " + x + " y: " + y);
+                int value = new Scanner(System.in).nextInt();
+                newArray[x][y] = value;
+            }
+        }
+
+        printArray(newArray);
+
     }
 
     public static void printArray(int[][] array) {
