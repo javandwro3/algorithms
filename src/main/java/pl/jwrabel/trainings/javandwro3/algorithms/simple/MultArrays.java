@@ -30,9 +30,15 @@ public class MultArrays {
         }
 
         // Wypisywanie - wewnętrzna tablica jako wiersz
-        for (int y = 0; y < arrayMult[0].length; y++) {
-            for (int x = 0; x < arrayMult.length; x++) {
-                System.out.print(arrayMult[x][y] + " ");
+        printArray(arrayMult);
+
+
+    }
+
+    public static void printArray(int[][] array){
+        for (int y = 0; y < array[0].length; y++) {
+            for (int x = 0; x < array.length; x++) {
+                System.out.print(array[x][y] + " ");
             }
             System.out.println();
         }
