@@ -74,11 +74,15 @@ public class MultArrays {
 
         for (int y = 0; y < array5x5[0].length; y++) {
             for (int x = 0; x < array5x5.length; x++) {
-                array5x5[x][y] = 1;
+                array5x5[x][y] = (x + 1) + (y * 5);
             }
         }
 
         printArray(array5x5);
+
+        // --- ZADANIE --- Tworzymy tablicę o rozmiarach X i Y podanych przez użytkownika
+        // Pytamy użytkownika o wartość każdego elementu
+        // Wypisujemy tablicę
     }
 
     public static void printArray(int[][] array) {
