@@ -22,6 +22,14 @@ public class Prime {
             int elem = primesLessThan.get(i);
             System.out.println(elem);
         }
+
+        // czynniki pierwsze liczby 54
+        System.out.println("Czynniki pierwsze liczby 54");
+        List<Integer> primeFactors = primeFactors(54);
+
+        for (int i = 0; i < primeFactors.size(); i++) {
+            System.out.println(primeFactors.get(i));
+        }
     }
 
     public static boolean isPrime(int x) {
