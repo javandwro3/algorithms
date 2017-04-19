@@ -85,6 +85,7 @@ public class MultArrays {
         // --- ZADANIE --- Tworzymy tablicę o rozmiarach X i Y podanych przez użytkownika
         // Pytamy użytkownika o wartość każdego elementu
         // Wypisujemy tablicę
+        System.out.println("------  TWORZENIE MACIERZY PODANEJ PRZEZ UŻYTKOWNIKA -----");
         System.out.println("Podaj X: ");
         int x = new Scanner(System.in).nextInt();
         System.out.println("Podaj Y: ");
