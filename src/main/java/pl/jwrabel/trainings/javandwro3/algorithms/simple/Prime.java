@@ -15,6 +15,7 @@ public class Prime {
         System.out.println(x + " is primary: " + isPrimary);
 
         // znalezienie wszystkich liczb pierwszych mniejszych od x
+        System.out.println("LICZBY PIERWSZE MNIEJSZE OD 50");
         List<Integer> primesLessThan = findPrimeLessThan(50);
 
         for (int i = 0; i < primesLessThan.size(); i++) {
@@ -25,7 +26,7 @@ public class Prime {
 
     public static boolean isPrime(int x) {
         for (int i = 2; i < x; i++) {
-            if(x % i == 0){
+            if (x % i == 0) {
                 return false;
             }
         }
@@ -37,15 +38,19 @@ public class Prime {
 
         for (int i = 2; i < x; i++) {
             boolean isPrime = isPrime(i);
-            if(isPrime){
+            if (isPrime) {
                 numbers.add(i);
             }
             // LUB
-            if(isPrime(i)){
+            if (isPrime(i)) {
                 numbers.add(i);
             }
         }
 
         return numbers;
+    }
+
+    public static List<Integer> primeFactors(int x) {
+        return null;
     }
 }
