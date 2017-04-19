@@ -1,5 +1,7 @@
 package pl.jwrabel.trainings.javandwro3.algorithms.simple;
 
+import java.util.Scanner;
+
 /**
  * Created by jakubwrabel on 19.04.2017.
  */
@@ -83,6 +85,12 @@ public class MultArrays {
         // --- ZADANIE --- Tworzymy tablicę o rozmiarach X i Y podanych przez użytkownika
         // Pytamy użytkownika o wartość każdego elementu
         // Wypisujemy tablicę
+        System.out.println("Podaj X: ");
+        int x = new Scanner(System.in).nextInt();
+        System.out.println("Podaj Y: ");
+        int y = new Scanner(System.in).nextInt();
+
+        System.out.println("Tworzę tablicę o wymiarach x: " + x + " y: " + y);
     }
 
     public static void printArray(int[][] array) {
