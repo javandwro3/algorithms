@@ -41,7 +41,7 @@ public class MultArrays {
 
         for (int y = 0; y < array5x5[0].length; y++) {
             for (int x = 0; x < array5x5.length; x++) {
-                array5x5[x][y] = x+1;
+                array5x5[x][y] = x + 1;
             }
         }
 
@@ -53,6 +53,14 @@ public class MultArrays {
         // 2 3 4 5 6
         // 3 4 5 6 7
         // ...
+
+        for (int y = 0; y < array5x5[0].length; y++) {
+            for (int x = 0; x < array5x5.length; x++) {
+                array5x5[x][y] = x + 1 + y;
+            }
+        }
+
+        printArray(array5x5);
 
 
     }
