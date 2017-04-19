@@ -7,9 +7,18 @@ import java.util.List;
  */
 public class Prime {
     public static void main(String[] args) {
+        // sprawdzanie czy x jest liczbą pierwszą
         int x = 21;
         boolean isPrimary = isPrime(x);
         System.out.println(x + " is primary: " + isPrimary);
+
+        // znalezienie wszystkich liczb pierwszych mniejszych od x
+        List<Integer> primesLessThan = findPrimeLessThan(50);
+
+        for (int i = 0; i < primesLessThan.size(); i++) {
+            int elem = primesLessThan.get(i);
+            System.out.println(elem);
+        }
     }
 
     public static boolean isPrime(int x) {
