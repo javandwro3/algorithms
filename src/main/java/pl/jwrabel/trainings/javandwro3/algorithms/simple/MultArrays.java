@@ -104,6 +104,31 @@ public class MultArrays {
 
         printArray(newArray);
 
+
+        // --- ZADANIE --- Transpozycja macierzy
+        // 1 2 3
+        // 4 5 6
+        // |
+        // V
+        // 1 4
+        // 2 5
+        // 3 6
+        int[][] arrayA = new int[][]{{1, 4}, {2, 5}, {3, 6}};
+        System.out.println("Macierz A");
+        printArray(arrayA);
+
+        int[][] arrayATransposed = new int[2][3];
+
+        for (int y = 0; y < arrayATransposed[0].length; y++) {
+            for (int x = 0; x < arrayATransposed.length; x++) {
+
+            }
+        }
+
+        System.out.println("Macierz A transponowana");
+        printArray(arrayATransposed);
+
+
     }
 
     public static void printArray(int[][] array) {
