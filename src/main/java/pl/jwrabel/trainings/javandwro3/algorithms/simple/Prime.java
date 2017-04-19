@@ -51,6 +51,12 @@ public class Prime {
     }
 
     public static List<Integer> primeFactors(int x) {
-        return null;
+        List<Integer> primeFactors = new ArrayList<>();
+        List<Integer> primes = findPrimeLessThan(x);
+        int index = 0;
+
+        ////
+
+        return primeFactors;
     }
 }
