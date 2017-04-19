@@ -63,7 +63,16 @@ public class Prime {
         List<Integer> primes = findPrimeLessThan(x);
         int index = 0;
 
-        ////
+        while (x > 1) {
+            int currentPrimeNumber = primes.get(index);
+            if (x % currentPrimeNumber == 0) {
+                primeFactors.add(currentPrimeNumber);
+                x = x / currentPrimeNumber;
+//                x /= currentPrimeNumber;
+            } else {
+                index++;
+            }
+        }
 
         return primeFactors;
     }
