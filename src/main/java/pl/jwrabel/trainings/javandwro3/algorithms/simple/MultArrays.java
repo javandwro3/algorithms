@@ -37,6 +37,8 @@ public class MultArrays {
         // 1 2 3 4 5
         // 1 2 3 4 5
         // ...
+        System.out.println("---------------------------");
+
         int[][] array5x5 = new int[5][5];
 
         for (int y = 0; y < array5x5[0].length; y++) {
@@ -53,7 +55,7 @@ public class MultArrays {
         // 2 3 4 5 6
         // 3 4 5 6 7
         // ...
-
+        System.out.println("---------------------------");
         for (int y = 0; y < array5x5[0].length; y++) {
             for (int x = 0; x < array5x5.length; x++) {
                 array5x5[x][y] = x + 1 + y;
@@ -63,6 +65,20 @@ public class MultArrays {
         printArray(array5x5);
 
 
+        // --- ZADANIE --- stworzenie tablicy 5x5, wypełnienie
+        // 1 2 3 4 5
+        // 6 7 8 9 10
+        // 11 12 13 14 15
+        // ...
+        System.out.println("---------------------------");
+
+        for (int y = 0; y < array5x5[0].length; y++) {
+            for (int x = 0; x < array5x5.length; x++) {
+                array5x5[x][y] = 1;
+            }
+        }
+
+        printArray(array5x5);
     }
 
     public static void printArray(int[][] array) {
