@@ -1,5 +1,7 @@
 package pl.jwrabel.trainings.javandwro3.algorithms.simple;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -31,6 +33,19 @@ public class Prime {
     }
 
     public static List<Integer> findPrimeLessThan(int x) {
-        return null;
+        List<Integer> numbers = new ArrayList<>();
+
+        for (int i = 2; i < x; i++) {
+            boolean isPrime = isPrime(i);
+            if(isPrime){
+                numbers.add(i);
+            }
+            // LUB
+            if(isPrime(i)){
+                numbers.add(i);
+            }
+        }
+
+        return numbers;
     }
 }
