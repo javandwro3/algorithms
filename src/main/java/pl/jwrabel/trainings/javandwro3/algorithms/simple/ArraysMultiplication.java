@@ -15,6 +15,15 @@ public class ArraysMultiplication {
         System.out.println("Macierz B:");
         MultArrays.printArray(matrixB);
 
+        int sizeXofA = matrixA.length;
+        int sizeYofA = matrixA[0].length;
+
+        int sizeXofB = matrixB.length;
+        int sizeYofB = matrixB[0].length;
+
+        // sprawdzić, czy da się je wymnożyć
+
+        // tworzysz macierz wynikową (pustą)
 
     }
 }
