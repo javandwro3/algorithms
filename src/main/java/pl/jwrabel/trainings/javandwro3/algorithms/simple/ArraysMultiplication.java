@@ -32,15 +32,12 @@ public class ArraysMultiplication {
 
             for (int x = 0; x < result.length; x++) { // result.length == sizeXofB
                 for (int y = 0; y < result[0].length; y++) { // result[0].lenght == sizeYofA
-                        result[x][y] = 1;
                         // wiersz z macierzy A y
                         // kolumnę z macierzy B x
                         int[] bColumn = matrixB[x];
                         int[] aRow = getRowFromMatrixA(y, matrixA);
 
-
-
-
+                        result[x][y] = 1;
                 }
             }
         } else {
@@ -50,7 +47,6 @@ public class ArraysMultiplication {
 
     private static int[] getRowFromMatrixA(int y, int[][] matrixA) {
         int[] row = new int[matrixA.length];
-
 
         System.out.println("Wiersz Y: " + y + " z macierzy A");
         for (int i = 0; i < matrixA.length; i++) {
