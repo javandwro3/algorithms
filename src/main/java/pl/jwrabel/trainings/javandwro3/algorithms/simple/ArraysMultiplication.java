@@ -21,9 +21,42 @@ public class ArraysMultiplication {
         int sizeXofB = matrixB.length;
         int sizeYofB = matrixB[0].length;
 
-        // sprawdzić, czy da się je wymnożyć
+        if(sizeXofA == sizeYofB){
+            int[][] result = new int[sizeXofB][sizeYofA];
 
-        // tworzysz macierz wynikową (pustą)
 
+            // wiersz 0 z tablicy A
+            int y = 0;
+
+
+
+            for (int x = 0; x < result.length; x++) { // result.length == sizeXofB
+                for (int y = 0; y < result[0].length; y++) { // result[0].lenght == sizeYofA
+                        result[x][y] = 1;
+                        // wiersz z macierzy A y
+                        // kolumnę z macierzy B x
+                        int[] bColumn = matrixB[x];
+                        int[] aRow = getRowFromMatrixA(y, matrixA);
+
+
+
+
+                }
+            }
+        } else {
+            System.out.println("Niepoprawne macierze!!!");
+        }
+    }
+
+    private static int[] getRowFromMatrixA(int y, int[][] matrixA) {
+        int[] row = new int[matrixA.length];
+
+
+        System.out.println("Wiersz Y: " + y + " z macierzy A");
+        for (int i = 0; i < matrixA.length; i++) {
+            row[i] = matrixA[i][y];
+            System.out.println(row[i]);
+        }
+        return row;
     }
 }
