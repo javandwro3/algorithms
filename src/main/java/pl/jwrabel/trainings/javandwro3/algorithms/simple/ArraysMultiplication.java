@@ -25,7 +25,7 @@ public class ArraysMultiplication {
             int[][] result = new int[sizeXofB][sizeYofA];
 
             for (int x = 0; x < result.length; x++) { // result.length == sizeXofB
-                for (int y = 0; y < result[0].length; y++) { // result[0].lenght == sizeYofA
+                for (int y = 0; y < result[0].length; y++) { // result[0].length == sizeYofA
                         // wiersz z macierzy A y
                         // kolumnę z macierzy B x
                         int[] bColumn = matrixB[x];
@@ -34,6 +34,9 @@ public class ArraysMultiplication {
                         result[x][y] = 1;
                 }
             }
+
+            System.out.println("Macierz wynikowa");
+            MultArrays.printArray(result);
         } else {
             System.out.println("Niepoprawne macierze!!!");
         }
