@@ -121,7 +121,7 @@ public class MultArrays {
 
         for (int y = 0; y < arrayATransposed[0].length; y++) {
             for (int x = 0; x < arrayATransposed.length; x++) {
-
+                arrayATransposed[x][y] = arrayA[y][x];
             }
         }
 
