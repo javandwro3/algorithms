@@ -24,12 +24,6 @@ public class ArraysMultiplication {
         if(sizeXofA == sizeYofB){
             int[][] result = new int[sizeXofB][sizeYofA];
 
-
-            // wiersz 0 z tablicy A
-            int y = 0;
-
-
-
             for (int x = 0; x < result.length; x++) { // result.length == sizeXofB
                 for (int y = 0; y < result[0].length; y++) { // result[0].lenght == sizeYofA
                         // wiersz z macierzy A y
