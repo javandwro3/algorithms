@@ -19,7 +19,10 @@ public class Caesar {
     public static String encrypt(String text, int offset) {
         char[] letters = text.toCharArray();
 
-        //
+        for (int i = 0; i < letters.length; i++) {
+//            letters[i] += offset;
+            letters[i] = (char) (letters[i] + offset);
+        }
 
         return new String(letters);
     }
@@ -27,7 +30,9 @@ public class Caesar {
     public static String decrypt(String encryptedText, int offset) {
         char[] letters = encryptedText.toCharArray();
 
-        //
+        for (int i = 0; i < letters.length; i++) {
+            letters[i] -= offset;
+        }
 
         return new String(letters);
     }
