@@ -23,4 +23,12 @@ public class Caesar {
 
         return new String(letters);
     }
+
+    public static String decrypt(String encryptedText, int offset) {
+        char[] letters = encryptedText.toCharArray();
+
+        //
+
+        return new String(letters);
+    }
 }
