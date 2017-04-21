@@ -8,7 +8,7 @@ import java.util.List;
  */
 public class PrimeAlgorithmsComparison {
     public static void main(String[] args) {
-        int x = 1_000_000;
+        int x = 10_000_000;
         System.out.println("Test dla X: " + x);
 
         long start = System.nanoTime();
