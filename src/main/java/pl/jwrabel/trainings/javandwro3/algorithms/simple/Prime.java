@@ -58,6 +58,34 @@ public class Prime {
         return numbers;
     }
 
+    public static List<Integer> eratosthenesSieve(int x) {
+        int[] array = new int[x + 1];
+
+        // wypełnienie tablicy liczbami 0, 1, 2...x
+        for (int i = 0; i < array.length; i++) {
+            array[i] = i;
+        }
+
+        for (int i = 2; i < x / 2; i++) {
+            if (array[i] != 0) {
+
+                for (int j = 2 * i; j < array.length; j += i) {
+                    array[j] = 0;
+                }
+
+            }
+        }
+
+        List<Integer> result = new ArrayList<>();
+        for (int elem : array) {
+            if (elem > 1) {
+                result.add(elem);
+            }
+        }
+
+        return result;
+    }
+
     public static List<Integer> primeFactors(int x) {
         List<Integer> primeFactors = new ArrayList<>();
         List<Integer> primes = findPrimeLessThan(x);
